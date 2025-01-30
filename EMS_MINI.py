@@ -58,7 +58,7 @@ def view_employees():
         return 
 
     # Display employees in a table-like format
-    print(f"{'ID':<10}{'Name':<15}{'Department':<15}{'Salary':<10}")
+    print(f"{'ID':<10}{'Name':<15}{'AGE':<5}{'Department':<15}{'Salary':<10}")
     print("-"*55)
     for emp_id , details in employees.items():
         print(f"{emp_id:<10}{details['name']:<15}{details['age']:<5}{details['department']:<15}{details['salary']:<10.2f}")
